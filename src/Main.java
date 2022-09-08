@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        task9();
+        task4();
     }
 
     public static void task1() {
@@ -43,9 +43,8 @@ public class Main {
     public static void task4() {
         int sumDeposit = 15000;
         int total = 0;
-        int i = 0;
-        for (; total <= 12_000_000; i++) {
-            total = total + sumDeposit * 7 / 100;
+        for (int i = 0; total <= 12_000_000; i++) {
+            total = total + total * 7 / 100;
             total = total + sumDeposit;
             System.out.println("Месяц " + i + " сумма вклада " + total);
         }
@@ -54,9 +53,8 @@ public class Main {
     public static void task5() {
         int sumDeposit = 15000;
         int total = 0;
-        int i = 0;
-        for (; total <= 12_000_000; i++) {
-            total = total + sumDeposit * 7 / 100;
+        for (int i = 0; total <= 12_000_000; i++) {
+            total = total + total * 7 / 100;
             total = total + sumDeposit;
             if (i % 6 == 0) {
                 System.out.println("Месяц " + i + " сумма вклада " + total);
@@ -67,9 +65,8 @@ public class Main {
     public static void task6() {
         int sumDeposit = 15000;
         int total = 0;
-        int i = 0;
-        for (; i <= 108; i++) {
-            total = total + sumDeposit * 7 / 100;
+        for (int i = 0; i <= 108; i++) {
+            total = total + total * 7 / 100;
             total = total + sumDeposit;
             if (i % 6 == 0) {
                 System.out.println("Месяц " + i + " сумма вклада " + total);
